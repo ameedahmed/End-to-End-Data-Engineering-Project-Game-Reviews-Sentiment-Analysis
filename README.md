@@ -19,3 +19,5 @@ A visual diagram is as follows:
 3. The third folder [gold_layer](https://github.com/ameedahmed/End-to-End-Data-Engineering-Project-Game-Reviews-Sentiment-Analysis/tree/main/docker_folder_files/gold_layer) is the implementation of [hugging face multi-lingual sentiment analysis model](https://huggingface.co/tabularisai/multilingual-sentiment-analysis) as well as a script for transferring data from S3 bucket to google sheet for visualization.
 ## Final Note
 In order to implement this project, please remember to save your aws key and id in the AWS Secrets Manager, along with your json credentials for google drive.
+
+Fyi, the word-cloud isn't perfect as in rare instances the positive reviews are classified as negative by the machine learning model.
