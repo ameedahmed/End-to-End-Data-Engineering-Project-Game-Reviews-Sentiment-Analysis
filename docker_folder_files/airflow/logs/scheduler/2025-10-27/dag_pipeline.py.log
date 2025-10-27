@@ -4990,3 +4990,83 @@
 [2025-10-27T12:44:28.350+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:44:28.350+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-10-27T12:44:28.690+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:44:28.689+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
 [2025-10-27T12:44:28.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.558 seconds
+[2025-10-27T12:44:58.965+0000] {processor.py:161} INFO - Started process (PID=3621) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:44:58.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:44:58.969+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:44:58.968+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:44:59.058+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:44:59.058+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:44:59.116+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:44:59.346+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:44:59.346+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:44:59.360+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:44:59.360+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:44:59.368+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.410 seconds
+[2025-10-27T12:45:29.626+0000] {processor.py:161} INFO - Started process (PID=3634) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:45:29.628+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:45:29.631+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:45:29.631+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:45:29.787+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:45:29.787+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:45:30.019+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:45:30.030+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:45:30.030+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:45:30.041+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:45:30.041+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:45:30.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.435 seconds
+[2025-10-27T12:46:00.283+0000] {processor.py:161} INFO - Started process (PID=3641) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:46:00.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:46:00.287+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:46:00.287+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:46:00.380+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:46:00.380+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:46:00.594+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:46:00.606+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:46:00.606+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:46:00.618+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:46:00.617+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:46:00.626+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.352 seconds
+[2025-10-27T12:46:30.882+0000] {processor.py:161} INFO - Started process (PID=3648) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:46:30.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:46:30.885+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:46:30.885+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:46:30.980+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:46:30.980+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:46:31.048+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:46:31.066+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:46:31.066+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:46:31.086+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:46:31.086+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:46:31.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.371 seconds
+[2025-10-27T12:47:01.528+0000] {processor.py:161} INFO - Started process (PID=3655) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:47:01.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:47:01.533+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:47:01.533+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:47:01.635+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:47:01.635+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:47:01.707+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:47:01.725+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:47:01.725+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:47:01.911+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:47:01.911+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:47:01.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.399 seconds
+[2025-10-27T12:47:32.159+0000] {processor.py:161} INFO - Started process (PID=3662) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:47:32.160+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:47:32.162+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:47:32.161+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:47:32.223+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:47:32.223+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:47:32.268+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:47:32.286+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:47:32.285+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:47:32.412+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:47:32.412+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:47:32.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.267 seconds
+[2025-10-27T12:48:02.654+0000] {processor.py:161} INFO - Started process (PID=3669) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:48:02.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:48:02.658+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:48:02.658+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:48:02.757+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:48:02.756+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:48:02.833+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:48:03.066+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:48:03.066+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:48:03.079+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:48:03.079+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:48:03.089+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.444 seconds
+[2025-10-27T12:48:33.377+0000] {processor.py:161} INFO - Started process (PID=3676) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:48:33.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:48:33.383+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:48:33.383+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:48:33.508+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:48:33.507+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:48:33.807+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:48:33.822+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:48:33.821+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:48:33.835+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:48:33.835+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:48:33.845+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.478 seconds
+[2025-10-27T12:49:04.098+0000] {processor.py:161} INFO - Started process (PID=3683) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:49:04.102+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:49:04.107+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:49:04.107+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:49:04.266+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:49:04.266+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:49:04.600+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:49:04.616+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:49:04.615+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:49:04.629+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:49:04.629+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:49:04.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.554 seconds
+[2025-10-27T12:49:34.948+0000] {processor.py:161} INFO - Started process (PID=3690) to work on /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:49:34.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dag_pipeline.py for tasks to queue
+[2025-10-27T12:49:34.953+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:49:34.953+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:49:35.067+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:49:35.067+0000] {base.py:84} INFO - Using connection ID 'aws_default' for task execution.
+[2025-10-27T12:49:35.144+0000] {processor.py:840} INFO - DAG(s) 'game_sentiment_data_pipeline' retrieved from /opt/airflow/dags/dag_pipeline.py
+[2025-10-27T12:49:35.161+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:49:35.160+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-27T12:49:35.183+0000] {logging_mixin.py:188} INFO - [2025-10-27T12:49:35.183+0000] {dag.py:3947} INFO - Setting next_dagrun for game_sentiment_data_pipeline to 2025-11-01 00:00:00+00:00, run_after=2025-12-01 00:00:00+00:00
+[2025-10-27T12:49:35.395+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dag_pipeline.py took 0.455 seconds
