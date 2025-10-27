@@ -1,4 +1,4 @@
-# Steam Top Selling Games ETL Pipeline
+# Steam Top Selling Games ETL Pipeline Using AWS & HuggingFace
 ## Motivation
 This is an end to end data pipeline project with the aim to help video game players make informed decisions regarding their entertainment purchases on Steam. This is achieved by measuring the number of positive and negative reviews against each title along with a tag cloud for positive and negative reactions. Output is a Looker Studio dashboard that can be accessed via: https://lookerstudio.google.com/reporting/b45ae42c-b8ad-498e-9d8a-c09ffee35fb2 
 
