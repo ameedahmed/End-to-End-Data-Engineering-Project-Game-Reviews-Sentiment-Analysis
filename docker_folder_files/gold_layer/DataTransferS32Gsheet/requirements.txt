@@ -1,0 +1,6 @@
+pandas
+gspread
+gspread_dataframe
+google-auth
+pyarrow
+s3fs

@@ -1,0 +1,32 @@
+[0m16:23:37.125475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10408f740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e7680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e73e0>]}
+
+
+============================== 16:23:37.129309 | b09b1ddd-0426-483d-8c71-eb6eccd7a649 ==============================
+[0m16:23:37.129309 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:23:37.129770 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'printer_width': '80', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'no_print': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'profiles_dir': '/Users/ameedahmed/.dbt', 'debug': 'False', 'warn_error': 'None', 'quiet': 'False', 'use_colors': 'True', 'version_check': 'True', 'write_json': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'target_path': 'None', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt run'}
+[0m16:23:37.130218 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/ameedahmed/Desktop/my_lambda_docker/docker_folder_files/gold_layer/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:23:37.156138 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.081318624, "process_in_blocks": "0", "process_kernel_time": 0.198591, "process_mem_max_rss": "103546880", "process_out_blocks": "0", "process_user_time": 0.980721}
+[0m16:23:37.156611 [debug] [MainThread]: Command `dbt run` failed at 16:23:37.156534 after 0.08 seconds
+[0m16:23:37.156892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1047d9c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049931a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1054e7560>]}
+[0m16:23:37.157200 [debug] [MainThread]: Flushing usage events
+[0m16:23:37.618911 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:24:15.900337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10618b5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e97650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e973b0>]}
+
+
+============================== 16:24:15.903530 | a42a9967-8e54-4530-bf3b-e245324057a6 ==============================
+[0m16:24:15.903530 [info ] [MainThread]: Running with dbt=1.10.13
+[0m16:24:15.903944 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run', 'no_print': 'None', 'profiles_dir': '/Users/ameedahmed/.dbt', 'printer_width': '80', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'version_check': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'introspect': 'True', 'write_json': 'True', 'partial_parse': 'True', 'log_path': 'logs', 'warn_error': 'None'}
+[0m16:24:15.904351 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/ameedahmed/Desktop/my_lambda_docker/docker_folder_files/gold_layer/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:24:15.906197 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.051483374, "process_in_blocks": "0", "process_kernel_time": 0.103463, "process_mem_max_rss": "102776832", "process_out_blocks": "0", "process_user_time": 0.934304}
+[0m16:24:15.906495 [debug] [MainThread]: Command `dbt run` failed at 16:24:15.906432 after 0.05 seconds
+[0m16:24:15.906738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106cd1070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1065e75c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e97470>]}
+[0m16:24:15.906964 [debug] [MainThread]: Flushing usage events
+[0m16:24:16.347884 [debug] [MainThread]: An error was encountered while trying to flush usage events

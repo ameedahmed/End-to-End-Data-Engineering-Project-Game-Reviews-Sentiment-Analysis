@@ -1,0 +1,37 @@
+[2025-10-21T22:56:10.619+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-21T22:56:10.634+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: game_sentiment_data_pipeline.dbt_run_top_selling_games_reviews manual__2025-10-21T22:55:02.148183+00:00 [queued]>
+[2025-10-21T22:56:10.638+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: game_sentiment_data_pipeline.dbt_run_top_selling_games_reviews manual__2025-10-21T22:55:02.148183+00:00 [queued]>
+[2025-10-21T22:56:10.638+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-21T22:56:10.645+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): dbt_run_top_selling_games_reviews> on 2025-10-21 22:55:02.148183+00:00
+[2025-10-21T22:56:10.649+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=128) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-21T22:56:10.650+0000] {standard_task_runner.py:64} INFO - Started process 129 to run task
+[2025-10-21T22:56:10.650+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'game_sentiment_data_pipeline', 'dbt_run_top_selling_games_reviews', 'manual__2025-10-21T22:55:02.148183+00:00', '--job-id', '122', '--raw', '--subdir', 'DAGS_FOLDER/dag_pipeline.py', '--cfg-path', '/tmp/tmp1e6m8065']
+[2025-10-21T22:56:10.651+0000] {standard_task_runner.py:91} INFO - Job 122: Subtask dbt_run_top_selling_games_reviews
+[2025-10-21T22:56:10.673+0000] {task_command.py:426} INFO - Running <TaskInstance: game_sentiment_data_pipeline.dbt_run_top_selling_games_reviews manual__2025-10-21T22:55:02.148183+00:00 [running]> on host 78a5e601f5ac
+[2025-10-21T22:56:10.712+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='game_sentiment_data_pipeline' AIRFLOW_CTX_TASK_ID='dbt_run_top_selling_games_reviews' AIRFLOW_CTX_EXECUTION_DATE='2025-10-21T22:55:02.148183+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-21T22:55:02.148183+00:00'
+[2025-10-21T22:56:10.712+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-21T22:56:10.720+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-21T22:56:10.720+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'cd /opt/***/silver_layer && /home/***/.local/bin/dbt run --select top_selling_games_reviews --full-refresh']
+[2025-10-21T22:56:10.725+0000] {subprocess.py:86} INFO - Output:
+[2025-10-21T22:56:12.138+0000] {subprocess.py:93} INFO - [0m22:56:12  Running with dbt=1.10.13
+[2025-10-21T22:56:12.505+0000] {subprocess.py:93} INFO - [0m22:56:12  Registered adapter: athena=1.9.5
+[2025-10-21T22:56:12.696+0000] {subprocess.py:93} INFO - [0m22:56:12  Found 3 models, 6 sources, 474 macros
+[2025-10-21T22:56:12.697+0000] {subprocess.py:93} INFO - [0m22:56:12
+[2025-10-21T22:56:12.697+0000] {subprocess.py:93} INFO - [0m22:56:12  Concurrency: 4 threads (target='dev')
+[2025-10-21T22:56:12.698+0000] {subprocess.py:93} INFO - [0m22:56:12
+[2025-10-21T22:56:13.572+0000] {subprocess.py:93} INFO - [0m22:56:13  1 of 1 START sql table model games_sentiment_analysis_silver.top_selling_games_reviews  [RUN]
+[2025-10-21T22:56:20.948+0000] {subprocess.py:93} INFO - [0m22:56:20  1 of 1 OK created sql table model games_sentiment_analysis_silver.top_selling_games_reviews  [[32mOK 9476[0m in 7.37s]
+[2025-10-21T22:56:20.951+0000] {subprocess.py:93} INFO - [0m22:56:20
+[2025-10-21T22:56:20.951+0000] {subprocess.py:93} INFO - [0m22:56:20  Finished running 1 table model in 0 hours 0 minutes and 8.25 seconds (8.25s).
+[2025-10-21T22:56:20.973+0000] {subprocess.py:93} INFO - [0m22:56:20
+[2025-10-21T22:56:20.974+0000] {subprocess.py:93} INFO - [0m22:56:20  [32mCompleted successfully[0m
+[2025-10-21T22:56:20.974+0000] {subprocess.py:93} INFO - [0m22:56:20
+[2025-10-21T22:56:20.974+0000] {subprocess.py:93} INFO - [0m22:56:20  Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[2025-10-21T22:56:21.689+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-21T22:56:21.690+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-21T22:56:21.707+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=game_sentiment_data_pipeline, task_id=dbt_run_top_selling_games_reviews, run_id=manual__2025-10-21T22:55:02.148183+00:00, execution_date=20251021T225502, start_date=20251021T225610, end_date=20251021T225621
+[2025-10-21T22:56:21.745+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-21T22:56:21.759+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-21T22:56:21.759+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

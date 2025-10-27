@@ -1,0 +1,13 @@
+games_sentiment_analysis_silver:
+  outputs:
+    dev:
+      database: awsdatacatalog
+      region_name: eu-central-1
+      s3_data_dir: s3://vgsa/silver/silver_tables_dbt_result/
+      s3_staging_dir: s3://vgsa/silver/athena_result/athena_silver_query_results/
+      schema: games_sentiment_analysis
+      aws_access_key_id: "{{ env_var('AWS_ACCESS_KEY_ID') }}"
+      aws_secret_access_key: "{{ env_var('AWS_SECRET_ACCESS_KEY') }}"
+      threads: 4
+      type: athena
+  target: dev

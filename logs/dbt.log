@@ -1,0 +1,165 @@
+[0m21:03:12.130702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10865b1a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087c32c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087c3050>]}
+
+
+============================== 21:03:12.134438 | 3d6aed91-61b4-4fa3-9ca2-f0b0cff33784 ==============================
+[0m21:03:12.134438 [info ] [MainThread]: Running with dbt=1.10.13
+[0m21:03:12.134887 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'introspect': 'True', 'fail_fast': 'False', 'write_json': 'True', 'log_path': 'logs', 'partial_parse': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'invocation_command': 'dbt init games_sentiment_analysis_silver', 'indirect_selection': 'eager', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'use_colors': 'True', 'printer_width': '80', 'log_format': 'default', 'profiles_dir': '/Users/ameedahmed/.dbt', 'target_path': 'None'}
+[0m21:03:12.147911 [info ] [MainThread]: Creating dbt configuration folder at /Users/ameedahmed/.dbt
+[0m21:03:12.149374 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:03:12.155042 [info ] [MainThread]: 
+Your new dbt project "games_sentiment_analysis_silver" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:03:12.155303 [info ] [MainThread]: Setting up your profile.
+[0m21:13:03.858891 [error] [MainThread]: Encountered an error:
+
+[0m21:13:03.867093 [error] [MainThread]: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/requires.py", line 178, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/task/init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m21:13:03.873381 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 591.7873, "process_in_blocks": "0", "process_kernel_time": 0.238422, "process_mem_max_rss": "111624192", "process_out_blocks": "0", "process_user_time": 1.128745}
+[0m21:13:03.874279 [debug] [MainThread]: Command `dbt init` failed at 21:13:03.874099 after 591.79 seconds
+[0m21:13:03.874832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a8b5c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108770350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108a0a240>]}
+[0m21:13:03.875323 [debug] [MainThread]: Flushing usage events
+[0m21:13:04.333011 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:13:09.326243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106bcfbc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d97230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106d96f90>]}
+
+
+============================== 21:13:09.329945 | b75ad73d-83e4-4d7c-a3e2-a46052279f11 ==============================
+[0m21:13:09.329945 [info ] [MainThread]: Running with dbt=1.10.13
+[0m21:13:09.330367 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/ameedahmed/.dbt', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_format': 'default', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'static_parser': 'True', 'write_json': 'True', 'version_check': 'True', 'no_print': 'None', 'introspect': 'True', 'log_path': 'logs', 'printer_width': '80', 'indirect_selection': 'eager', 'target_path': 'None', 'debug': 'False', 'empty': 'None', 'invocation_command': 'dbt init games_sentiment_analysis_silver'}
+[0m21:13:09.343305 [info ] [MainThread]: A project called games_sentiment_analysis_silver already exists here.
+[0m21:13:09.345394 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.06631187, "process_in_blocks": "0", "process_kernel_time": 0.139995, "process_mem_max_rss": "105512960", "process_out_blocks": "0", "process_user_time": 0.944374}
+[0m21:13:09.345733 [debug] [MainThread]: Command `dbt init` succeeded at 21:13:09.345659 after 0.07 seconds
+[0m21:13:09.345992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104899130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106b35ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106dc59d0>]}
+[0m21:13:09.346246 [debug] [MainThread]: Flushing usage events
+[0m21:13:09.788373 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:13:19.893882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10449a720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c0f230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c0ef90>]}
+
+
+============================== 21:13:19.897339 | 86baca44-de15-47aa-9dde-10967766d406 ==============================
+[0m21:13:19.897339 [info ] [MainThread]: Running with dbt=1.10.13
+[0m21:13:19.897786 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error': 'None', 'use_colors': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'write_json': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/Users/ameedahmed/.dbt', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'no_print': 'None', 'log_path': 'logs', 'log_cache_events': 'False', 'printer_width': '80', 'invocation_command': 'dbt init games_sentiment_analysis_silver', 'empty': 'None', 'log_format': 'default', 'fail_fast': 'False'}
+[0m21:13:19.907077 [debug] [MainThread]: Starter project path: /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/dbt/include/starter_project
+[0m21:13:19.914072 [info ] [MainThread]: 
+Your new dbt project "games_sentiment_analysis_silver" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:13:19.914466 [info ] [MainThread]: Setting up your profile.
+[0m21:16:39.154055 [info ] [MainThread]: Profile games_sentiment_analysis_silver written to /Users/ameedahmed/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:16:39.159781 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 199.31032, "process_in_blocks": "0", "process_kernel_time": 0.175566, "process_mem_max_rss": "129335296", "process_out_blocks": "0", "process_user_time": 1.112588}
+[0m21:16:39.160760 [debug] [MainThread]: Command `dbt init` succeeded at 21:16:39.160556 after 199.31 seconds
+[0m21:16:39.161525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fa9280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104cacaa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104bc0170>]}
+[0m21:16:39.162206 [debug] [MainThread]: Flushing usage events
+[0m21:16:39.621026 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:16:52.489427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079ecd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11af238f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b117080>]}
+
+
+============================== 21:16:52.493025 | 3754a329-68a5-45f1-83d1-1b0664cddda5 ==============================
+[0m21:16:52.493025 [info ] [MainThread]: Running with dbt=1.10.13
+[0m21:16:52.493451 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'empty': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'introspect': 'True', 'quiet': 'False', 'write_json': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'log_path': 'logs', 'static_parser': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'use_colors': 'True', 'no_print': 'None', 'profiles_dir': '/Users/ameedahmed/.dbt', 'target_path': 'None'}
+[0m21:16:52.504781 [info ] [MainThread]: dbt version: 1.10.13
+[0m21:16:52.505165 [info ] [MainThread]: python version: 3.12.7
+[0m21:16:52.505377 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+[0m21:16:52.505571 [info ] [MainThread]: os info: macOS-26.0.1-arm64-arm-64bit
+[0m21:16:52.749929 [info ] [MainThread]: Using profiles dir at /Users/ameedahmed/.dbt
+[0m21:16:52.750285 [info ] [MainThread]: Using profiles.yml file at /Users/ameedahmed/.dbt/profiles.yml
+[0m21:16:52.750479 [info ] [MainThread]: Using dbt_project.yml file at /Users/ameedahmed/Desktop/my_lambda_docker/dbt_project.yml
+[0m21:16:52.750857 [info ] [MainThread]: adapter type: athena
+[0m21:16:52.751112 [info ] [MainThread]: adapter version: 1.9.5
+[0m21:16:52.751312 [info ] [MainThread]: Configuration:
+[0m21:16:52.751483 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:16:52.751642 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:16:52.751797 [info ] [MainThread]: Required dependencies:
+[0m21:16:52.752000 [debug] [MainThread]: Executing "git --help"
+[0m21:16:52.776885 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:16:52.777663 [debug] [MainThread]: STDERR: "b''"
+[0m21:16:52.777914 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:16:52.778134 [info ] [MainThread]: Connection:
+[0m21:16:52.778352 [info ] [MainThread]:   s3_staging_dir: s3://vgsa/silver/athena_result/athena_silver_query_results/
+[0m21:16:52.778532 [info ] [MainThread]:   work_group: None
+[0m21:16:52.778691 [info ] [MainThread]:   skip_workgroup_check: False
+[0m21:16:52.778850 [info ] [MainThread]:   region_name: eu-central-1
+[0m21:16:52.779000 [info ] [MainThread]:   database: awsdatacatalog
+[0m21:16:52.779156 [info ] [MainThread]:   schema: dbt_ameedahmed
+[0m21:16:52.779317 [info ] [MainThread]:   poll_interval: 1.0
+[0m21:16:52.779466 [info ] [MainThread]:   aws_profile_name: None
+[0m21:16:52.779622 [info ] [MainThread]:   aws_access_key_id: None
+[0m21:16:52.779769 [info ] [MainThread]:   endpoint_url: None
+[0m21:16:52.779936 [info ] [MainThread]:   s3_data_dir: s3://vgsa/silver/silver_tables_dbt_result/
+[0m21:16:52.780095 [info ] [MainThread]:   s3_data_naming: schema_table_unique
+[0m21:16:52.780248 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m21:16:52.780401 [info ] [MainThread]:   debug_query_state: False
+[0m21:16:52.780554 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m21:16:52.780704 [info ] [MainThread]:   lf_tags_database: None
+[0m21:16:52.780852 [info ] [MainThread]:   spark_work_group: None
+[0m21:16:52.781319 [info ] [MainThread]: Registered adapter: athena=1.9.5
+[0m21:16:52.884611 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m21:16:52.885174 [debug] [MainThread]: Using athena connection "debug"
+[0m21:16:52.885372 [debug] [MainThread]: On debug: select 1 as id
+[0m21:16:52.885555 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:16:53.180651 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query ID 8df3f841-0054-43cf-841d-83b4a4feee8d
+[0m21:16:54.559616 [debug] [MainThread]: SQL status: OK -1 in 1.674 seconds
+[0m21:16:54.561374 [debug] [MainThread]: On debug: Close
+[0m21:16:54.561838 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m21:16:54.562306 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:16:54.562677 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/ameedahmed/Desktop/my_lambda_docker/dbt_project.yml> not found
+
+[0m21:16:54.566995 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.123262, "process_in_blocks": "0", "process_kernel_time": 0.265128, "process_mem_max_rss": "156205056", "process_out_blocks": "0", "process_user_time": 1.337721}
+[0m21:16:54.567632 [debug] [MainThread]: Command `dbt debug` failed at 21:16:54.567505 after 2.12 seconds
+[0m21:16:54.568109 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:16:54.568545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ac4c140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b114560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aebecf0>]}
+[0m21:16:54.569109 [debug] [MainThread]: Flushing usage events
+[0m21:16:55.007112 [debug] [MainThread]: An error was encountered while trying to flush usage events

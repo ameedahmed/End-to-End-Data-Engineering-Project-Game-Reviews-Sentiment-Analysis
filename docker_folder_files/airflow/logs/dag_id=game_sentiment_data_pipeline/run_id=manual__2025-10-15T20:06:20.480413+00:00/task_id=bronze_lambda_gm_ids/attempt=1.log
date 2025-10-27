@@ -1,0 +1,23 @@
+[2025-10-15T20:07:06.428+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-15T20:07:06.455+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: game_sentiment_data_pipeline.bronze_lambda_gm_ids manual__2025-10-15T20:06:20.480413+00:00 [queued]>
+[2025-10-15T20:07:06.462+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: game_sentiment_data_pipeline.bronze_lambda_gm_ids manual__2025-10-15T20:06:20.480413+00:00 [queued]>
+[2025-10-15T20:07:06.463+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-15T20:07:06.474+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): bronze_lambda_gm_ids> on 2025-10-15 20:06:20.480413+00:00
+[2025-10-15T20:07:06.479+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=247) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-15T20:07:06.481+0000] {standard_task_runner.py:64} INFO - Started process 248 to run task
+[2025-10-15T20:07:06.481+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'game_sentiment_data_pipeline', 'bronze_lambda_gm_ids', 'manual__2025-10-15T20:06:20.480413+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/dag_pipeline.py', '--cfg-path', '/tmp/tmp4lp7_v0c']
+[2025-10-15T20:07:06.482+0000] {standard_task_runner.py:91} INFO - Job 74: Subtask bronze_lambda_gm_ids
+[2025-10-15T20:07:06.517+0000] {task_command.py:426} INFO - Running <TaskInstance: game_sentiment_data_pipeline.bronze_lambda_gm_ids manual__2025-10-15T20:06:20.480413+00:00 [running]> on host e37ef65f9b61
+[2025-10-15T20:07:06.577+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='game_sentiment_data_pipeline' AIRFLOW_CTX_TASK_ID='bronze_lambda_gm_ids' AIRFLOW_CTX_EXECUTION_DATE='2025-10-15T20:06:20.480413+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-15T20:06:20.480413+00:00'
+[2025-10-15T20:07:06.578+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-15T20:07:06.587+0000] {logging_mixin.py:188} INFO - Invoking Lambda function: bronze_game_id_name_docker
+[2025-10-15T20:07:14.694+0000] {logging_mixin.py:188} INFO - Lambda response: {'ResponseMetadata': {'RequestId': 'f4c82bf6-0c7d-4175-93ea-a84e7fe701da', 'HTTPStatusCode': 200, 'HTTPHeaders': {'date': 'Wed, 15 Oct 2025 20:07:14 GMT', 'content-type': 'application/json', 'content-length': '69', 'connection': 'keep-alive', 'x-amzn-requestid': 'f4c82bf6-0c7d-4175-93ea-a84e7fe701da', 'x-amzn-remapped-content-length': '0', 'x-amz-executed-version': '$LATEST', 'x-amzn-trace-id': 'Root=1-68effeea-5b1802114a64e34876ab4c85;Parent=7117e5ccb05001a1;Sampled=0;Lineage=1:ab20d15b:0'}, 'RetryAttempts': 0}, 'StatusCode': 200, 'ExecutedVersion': '$LATEST', 'Payload': <botocore.response.StreamingBody object at 0xffff925fcd90>}
+[2025-10-15T20:07:14.695+0000] {logging_mixin.py:188} INFO - Lambda output: {"status": "success", "app_id_s3": "s3://vgsa/bronze/app_id.parquet"}
+[2025-10-15T20:07:14.696+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-15T20:07:14.696+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-15T20:07:14.705+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=game_sentiment_data_pipeline, task_id=bronze_lambda_gm_ids, run_id=manual__2025-10-15T20:06:20.480413+00:00, execution_date=20251015T200620, start_date=20251015T200706, end_date=20251015T200714
+[2025-10-15T20:07:14.725+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-15T20:07:14.735+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-15T20:07:14.735+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

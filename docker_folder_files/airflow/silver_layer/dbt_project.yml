@@ -1,0 +1,19 @@
+name: 'games_sentiment_analysis'
+version: '1.0.0'
+config-version: 2
+
+profile: 'games_sentiment_analysis_silver'
+
+# Tell dbt not to double-prefix schema/database names
+quoting:
+  schema: false
+  identifier: false
+
+# Default model configurations
+models:
+  games_sentiment_analysis:
+    +materialized: table
+
+    silver:
+      +schema: silver
+      +tags: ['silver']

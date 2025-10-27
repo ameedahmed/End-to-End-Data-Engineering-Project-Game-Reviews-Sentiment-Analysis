@@ -1,0 +1,22 @@
+##Specify the source, the schema and the tables inside the schema (database)
+#Once the gsa bronze tables have been defined, specify the database (schema) for the silver layer
+version: 2
+sources:
+  - name: gsa_bronze_tables
+    schema: gsa_bronze
+    tables: 
+      - name: reviews
+        external_location: "s3://vgsa/bronze/reviews/"
+      - name: reviewsummary
+        external_location: "s3://vgsa/bronze/reviewsummary/"
+      - name: top_selling_games
+        external_location: "s3://vgsa/bronze/top_selling_games"
+      - name: game_id 
+        external_location: "s3://vgsa/bronze/game_id/"
+  - name: gsa_silver_tables
+    schema: gsa_silver
+    tables:
+      - name: top_selling_games_names_id
+        external_location: "s3://vgsa/silver/silver_tables_dbt_result/top_selling_games_names_id/"
+      - name: game_reviews
+        external_location: "s3://vgsa/silver/silver_tables_dbt_result/game_reviews/"

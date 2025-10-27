@@ -1,0 +1,186 @@
+[0m18:50:07.186806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078d89e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a5173e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a517110>]}
+
+
+============================== 18:50:07.190729 | 2dda6f48-b630-41ff-ac7c-b106d8e0a6b8 ==============================
+[0m18:50:07.190729 [info ] [MainThread]: Running with dbt=1.10.13
+[0m18:50:07.191167 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'profiles_dir': '/Users/ameedahmed/.dbt', 'warn_error': 'None', 'no_print': 'None', 'quiet': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'log_path': 'logs', 'log_format': 'default', 'empty': 'None', 'debug': 'False', 'target_path': 'None', 'printer_width': '80', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug'}
+[0m18:50:07.206113 [info ] [MainThread]: dbt version: 1.10.13
+[0m18:50:07.206551 [info ] [MainThread]: python version: 3.12.7
+[0m18:50:07.206832 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+[0m18:50:07.207100 [info ] [MainThread]: os info: macOS-26.0.1-arm64-arm-64bit
+[0m18:50:07.506472 [info ] [MainThread]: Using profiles dir at /Users/ameedahmed/.dbt
+[0m18:50:07.506849 [info ] [MainThread]: Using profiles.yml file at /Users/ameedahmed/.dbt/profiles.yml
+[0m18:50:07.507053 [info ] [MainThread]: Using dbt_project.yml file at /Users/ameedahmed/Desktop/my_lambda_docker/docker_folder_files/airflow/dbt_project.yml
+[0m18:50:07.507434 [info ] [MainThread]: adapter type: athena
+[0m18:50:07.507625 [info ] [MainThread]: adapter version: 1.9.5
+[0m18:50:07.507829 [info ] [MainThread]: Configuration:
+[0m18:50:07.507999 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:50:07.508158 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:50:07.508320 [info ] [MainThread]: Required dependencies:
+[0m18:50:07.508532 [debug] [MainThread]: Executing "git --help"
+[0m18:50:07.535970 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:50:07.536772 [debug] [MainThread]: STDERR: "b''"
+[0m18:50:07.537025 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:50:07.537249 [info ] [MainThread]: Connection:
+[0m18:50:07.537463 [info ] [MainThread]:   s3_staging_dir: s3://vgsa/silver/athena_result/athena_silver_query_results/
+[0m18:50:07.537646 [info ] [MainThread]:   work_group: None
+[0m18:50:07.537802 [info ] [MainThread]:   skip_workgroup_check: False
+[0m18:50:07.537959 [info ] [MainThread]:   region_name: eu-central-1
+[0m18:50:07.538107 [info ] [MainThread]:   database: awsdatacatalog
+[0m18:50:07.538260 [info ] [MainThread]:   schema: games_sentiment_analysis
+[0m18:50:07.538417 [info ] [MainThread]:   poll_interval: 1.0
+[0m18:50:07.538564 [info ] [MainThread]:   aws_profile_name: None
+[0m18:50:07.538716 [info ] [MainThread]:   aws_access_key_id: None
+[0m18:50:07.538864 [info ] [MainThread]:   endpoint_url: None
+[0m18:50:07.539012 [info ] [MainThread]:   s3_data_dir: s3://vgsa/silver/silver_tables_dbt_result/
+[0m18:50:07.539165 [info ] [MainThread]:   s3_data_naming: schema_table_unique
+[0m18:50:07.539312 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m18:50:07.539461 [info ] [MainThread]:   debug_query_state: False
+[0m18:50:07.539609 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m18:50:07.539757 [info ] [MainThread]:   lf_tags_database: None
+[0m18:50:07.539900 [info ] [MainThread]:   spark_work_group: None
+[0m18:50:07.540337 [info ] [MainThread]: Registered adapter: athena=1.9.5
+[0m18:50:07.642402 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m18:50:07.643028 [debug] [MainThread]: Using athena connection "debug"
+[0m18:50:07.643235 [debug] [MainThread]: On debug: select 1 as id
+[0m18:50:07.643413 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:50:07.921493 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query ID fcd65a7a-9dc7-42a1-9a47-f981d154a882
+[0m18:50:09.275882 [debug] [MainThread]: SQL status: OK -1 in 1.632 seconds
+[0m18:50:09.278333 [debug] [MainThread]: On debug: Close
+[0m18:50:09.278902 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:50:09.279484 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:50:09.279949 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/ameedahmed/Desktop/my_lambda_docker/docker_folder_files/airflow/dbt_project.yml> not found
+
+[0m18:50:09.285799 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.1524205, "process_in_blocks": "0", "process_kernel_time": 0.351949, "process_mem_max_rss": "159334400", "process_out_blocks": "0", "process_user_time": 1.355633}
+[0m18:50:09.286411 [debug] [MainThread]: Command `dbt debug` failed at 18:50:09.286286 after 2.15 seconds
+[0m18:50:09.287064 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:50:09.287615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a27f050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ad1afc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a222120>]}
+[0m18:50:09.288174 [debug] [MainThread]: Flushing usage events
+[0m18:50:09.751119 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:55:54.796207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10771d640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a172f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a17020>]}
+
+
+============================== 18:55:54.800019 | d7c66bc6-c467-4cb3-bcec-72cab383802f ==============================
+[0m18:55:54.800019 [info ] [MainThread]: Running with dbt=1.10.13
+[0m18:55:54.800439 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'invocation_command': 'dbt debug', 'log_format': 'default', 'indirect_selection': 'eager', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'printer_width': '80', 'partial_parse': 'True', 'introspect': 'True', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'profiles_dir': '/Users/ameedahmed/.dbt', 'use_colors': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'target_path': 'None', 'quiet': 'False'}
+[0m18:55:54.808446 [info ] [MainThread]: dbt version: 1.10.13
+[0m18:55:54.808804 [info ] [MainThread]: python version: 3.12.7
+[0m18:55:54.809003 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+[0m18:55:54.809176 [info ] [MainThread]: os info: macOS-26.0.1-arm64-arm-64bit
+[0m18:55:55.023963 [info ] [MainThread]: Using profiles dir at /Users/ameedahmed/.dbt
+[0m18:55:55.024328 [info ] [MainThread]: Using profiles.yml file at /Users/ameedahmed/.dbt/profiles.yml
+[0m18:55:55.024522 [info ] [MainThread]: Using dbt_project.yml file at /Users/ameedahmed/Desktop/my_lambda_docker/docker_folder_files/airflow/dbt_project.yml
+[0m18:55:55.024826 [info ] [MainThread]: adapter type: athena
+[0m18:55:55.025005 [info ] [MainThread]: adapter version: 1.9.5
+[0m18:55:55.025196 [info ] [MainThread]: Configuration:
+[0m18:55:55.025358 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:55:55.025511 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:55:55.025668 [info ] [MainThread]: Required dependencies:
+[0m18:55:55.025883 [debug] [MainThread]: Executing "git --help"
+[0m18:55:55.049250 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:55:55.050017 [debug] [MainThread]: STDERR: "b''"
+[0m18:55:55.050267 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:55:55.050501 [info ] [MainThread]: Connection:
+[0m18:55:55.050725 [info ] [MainThread]:   s3_staging_dir: s3://vgsa/silver/athena_result/athena_silver_query_results/
+[0m18:55:55.050908 [info ] [MainThread]:   work_group: None
+[0m18:55:55.051071 [info ] [MainThread]:   skip_workgroup_check: False
+[0m18:55:55.051231 [info ] [MainThread]:   region_name: eu-central-1
+[0m18:55:55.051383 [info ] [MainThread]:   database: awsdatacatalog
+[0m18:55:55.051546 [info ] [MainThread]:   schema: games_sentiment_analysis
+[0m18:55:55.051710 [info ] [MainThread]:   poll_interval: 1.0
+[0m18:55:55.051862 [info ] [MainThread]:   aws_profile_name: None
+[0m18:55:55.052014 [info ] [MainThread]:   aws_access_key_id: None
+[0m18:55:55.052167 [info ] [MainThread]:   endpoint_url: None
+[0m18:55:55.052318 [info ] [MainThread]:   s3_data_dir: s3://vgsa/silver/silver_tables_dbt_result/
+[0m18:55:55.052473 [info ] [MainThread]:   s3_data_naming: schema_table_unique
+[0m18:55:55.052627 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m18:55:55.052781 [info ] [MainThread]:   debug_query_state: False
+[0m18:55:55.052929 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m18:55:55.053080 [info ] [MainThread]:   lf_tags_database: None
+[0m18:55:55.053227 [info ] [MainThread]:   spark_work_group: None
+[0m18:55:55.053665 [info ] [MainThread]: Registered adapter: athena=1.9.5
+[0m18:55:55.125795 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m18:55:55.126352 [debug] [MainThread]: Using athena connection "debug"
+[0m18:55:55.126550 [debug] [MainThread]: On debug: select 1 as id
+[0m18:55:55.126724 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:55:55.341853 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query ID 927aa03f-3c1f-47a2-965c-322b7c15db80
+[0m18:55:56.718358 [debug] [MainThread]: SQL status: OK -1 in 1.591 seconds
+[0m18:55:56.720672 [debug] [MainThread]: On debug: Close
+[0m18:55:56.721206 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:55:56.721769 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:55:56.722189 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/ameedahmed/Desktop/my_lambda_docker/docker_folder_files/airflow/dbt_project.yml> not found
+
+[0m18:55:56.725657 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.9758968, "process_in_blocks": "0", "process_kernel_time": 0.239099, "process_mem_max_rss": "155729920", "process_out_blocks": "0", "process_user_time": 1.331995}
+[0m18:55:56.726202 [debug] [MainThread]: Command `dbt debug` failed at 18:55:56.726090 after 1.98 seconds
+[0m18:55:56.726631 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:55:56.727044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073538c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110709d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1079cb380>]}
+[0m18:55:56.727560 [debug] [MainThread]: Flushing usage events
+[0m18:55:57.204588 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:02:01.952867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e3a000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107033290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107032ff0>]}
+
+
+============================== 19:02:01.956761 | aa098d2c-8c58-4e59-8221-d52e49cc684b ==============================
+[0m19:02:01.956761 [info ] [MainThread]: Running with dbt=1.10.13
+[0m19:02:01.957221 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'warn_error': 'None', 'profiles_dir': '/Users/ameedahmed/.dbt', 'no_print': 'None', 'empty': 'None', 'target_path': 'None', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'static_parser': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'use_colors': 'True', 'introspect': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'partial_parse': 'True', 'write_json': 'True', 'printer_width': '80'}
+[0m19:02:01.968281 [info ] [MainThread]: dbt version: 1.10.13
+[0m19:02:01.968542 [info ] [MainThread]: python version: 3.12.7
+[0m19:02:01.968730 [info ] [MainThread]: python path: /Library/Frameworks/Python.framework/Versions/3.12/bin/python3.12
+[0m19:02:01.968908 [info ] [MainThread]: os info: macOS-26.0.1-arm64-arm-64bit
+[0m19:02:02.220798 [info ] [MainThread]: Using profiles dir at /Users/ameedahmed/.dbt
+[0m19:02:02.221158 [info ] [MainThread]: Using profiles.yml file at /Users/ameedahmed/.dbt/profiles.yml
+[0m19:02:02.221353 [info ] [MainThread]: Using dbt_project.yml file at /Users/ameedahmed/Desktop/my_lambda_docker/docker_folder_files/airflow/dbt_project.yml
+[0m19:02:02.221691 [info ] [MainThread]: adapter type: athena
+[0m19:02:02.221876 [info ] [MainThread]: adapter version: 1.9.5
+[0m19:02:02.222057 [info ] [MainThread]: Configuration:
+[0m19:02:02.222221 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:02:02.222378 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:02:02.222537 [info ] [MainThread]: Required dependencies:
+[0m19:02:02.222746 [debug] [MainThread]: Executing "git --help"
+[0m19:02:02.255185 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:02:02.255978 [debug] [MainThread]: STDERR: "b''"
+[0m19:02:02.256233 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:02:02.256483 [info ] [MainThread]: Connection:
+[0m19:02:02.256713 [info ] [MainThread]:   s3_staging_dir: s3://vgsa/silver/athena_result/athena_silver_query_results/
+[0m19:02:02.256889 [info ] [MainThread]:   work_group: None
+[0m19:02:02.257046 [info ] [MainThread]:   skip_workgroup_check: False
+[0m19:02:02.257202 [info ] [MainThread]:   region_name: eu-central-1
+[0m19:02:02.257351 [info ] [MainThread]:   database: awsdatacatalog
+[0m19:02:02.257504 [info ] [MainThread]:   schema: games_sentiment_analysis
+[0m19:02:02.257665 [info ] [MainThread]:   poll_interval: 1.0
+[0m19:02:02.257813 [info ] [MainThread]:   aws_profile_name: None
+[0m19:02:02.257965 [info ] [MainThread]:   aws_access_key_id: None
+[0m19:02:02.258111 [info ] [MainThread]:   endpoint_url: None
+[0m19:02:02.258264 [info ] [MainThread]:   s3_data_dir: s3://vgsa/silver/silver_tables_dbt_result/
+[0m19:02:02.258419 [info ] [MainThread]:   s3_data_naming: schema_table_unique
+[0m19:02:02.258569 [info ] [MainThread]:   s3_tmp_table_dir: None
+[0m19:02:02.258722 [info ] [MainThread]:   debug_query_state: False
+[0m19:02:02.258867 [info ] [MainThread]:   seed_s3_upload_args: None
+[0m19:02:02.259015 [info ] [MainThread]:   lf_tags_database: None
+[0m19:02:02.259158 [info ] [MainThread]:   spark_work_group: None
+[0m19:02:02.259652 [info ] [MainThread]: Registered adapter: athena=1.9.5
+[0m19:02:02.335715 [debug] [MainThread]: Acquiring new athena connection 'debug'
+[0m19:02:02.336318 [debug] [MainThread]: Using athena connection "debug"
+[0m19:02:02.336526 [debug] [MainThread]: On debug: select 1 as id
+[0m19:02:02.336704 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:02:02.594011 [debug] [MainThread]: dbt.adapters.athena.constants adapter: Athena query ID 2b2e28ae-3f18-432f-bfe6-9d696df74d3d
+[0m19:02:03.960760 [debug] [MainThread]: SQL status: OK -1 in 1.624 seconds
+[0m19:02:03.962454 [debug] [MainThread]: On debug: Close
+[0m19:02:03.962889 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:02:03.963318 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:02:03.963677 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/ameedahmed/Desktop/my_lambda_docker/docker_folder_files/airflow/dbt_project.yml> not found
+
+[0m19:02:03.968774 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 2.065591, "process_in_blocks": "0", "process_kernel_time": 0.286203, "process_mem_max_rss": "155877376", "process_out_blocks": "0", "process_user_time": 1.329955}
+[0m19:02:03.969359 [debug] [MainThread]: Command `dbt debug` failed at 19:02:03.969245 after 2.07 seconds
+[0m19:02:03.969784 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:02:03.970177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106ae5070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102c342c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1080fea80>]}
+[0m19:02:03.970664 [debug] [MainThread]: Flushing usage events
+[0m19:02:04.406683 [debug] [MainThread]: An error was encountered while trying to flush usage events
